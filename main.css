@@ -1,0 +1,61 @@
+body {
+    background-image: url('joe-woods-4Zaq5xY5M_c-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+body{
+    text-align: center;
+}
+h1{
+    color: rgba(255,255,255,0.8); text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+}
+u{
+    color: rgba(255,255,255,0.8); text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+
+}
+body {
+    border: 1px solid #a06f16;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+div{
+    font-display:inherit;
+    color: rgba(0, 0, 0, 0.8); 
+    text-shadow: 2px 2px 4px rgba(150, 105, 53, 0.5);
+}
+nav {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.569);
+}
+footer {
+    background-color: rgba(247, 247, 247, 0);
+    color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+}
