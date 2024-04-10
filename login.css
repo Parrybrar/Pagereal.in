@@ -1,5 +1,5 @@
 body {
-    background-image: url('joe-woods-4Zaq5xY5M_c-unsplash.jpg');
+    background-image: url('downloadedImage\ \(6\).png');
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -8,7 +8,8 @@ body {
     height: 100vh;
     margin: 0;
 }
-body{
+
+body {
     border: 1px solid #a06f16;
     border-radius: 10px;
     padding: 20px;
@@ -16,7 +17,7 @@ body{
 }
 
 .login-box {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -51,7 +52,8 @@ body{
 .login-box input[type="submit"]:hover {
     background-color: rgba(149, 148, 148, 0.688);
 }
-.back-button{
+
+.back-button {
     background-color: transparent;
     border: none;
     color: rgb(0, 0, 0);
@@ -63,7 +65,9 @@ body{
     right: 27%;
     padding: 10px;
     line-height: 1;
+    text-decoration: none;
 }
+
 .signup-box a {
     color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
@@ -71,17 +75,4 @@ body{
 
 .signup-box a:hover {
     text-decoration: underline;
-}
-.signup-box a{
-    background-color: transparent;
-    border: none;
-    color: rgb(0, 0, 0);
-    font-size: 1rem;
-    cursor: pointer;
-    position: absolute;
-    top: 77%;
-    transform: translateY(-50%);
-    right: 35%;
-    padding: 10px;
-    line-height: 1;
 }
