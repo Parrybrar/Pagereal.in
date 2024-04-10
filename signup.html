@@ -1,78 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Signup-PageReal</title>
     <link rel="stylesheet" href="signup.css">
-
-
+    <title>Sign Up</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Signup-PageReal</h1>
-        <form name='registration' onSubmit="return formValidation();">
-            <label for="userid">Create User ID:</label>
-            <input type="text" name="userid" id="userid" required>
-            <label for="passid">Password:</label>
-            <input type="password" name="passid" id="passid" required>
-            <label for="username">Name:</label>
-            <input type="text" name="username" id="username" required>
-            <label for="address">Address:</label>
-            <input type="text" name="address" id="address" required>
-            <label for="country">Country:</label>
-            <select name="country" id="country" required>
-                <option value="" disabled selected>Please select a country</option>
-            </select>
-            <label for="zip">ZIP Code:</label>
-            <input type="number" name="zip" id="zip" required>
+    <div class="signup-box">
+        <a href="index.html" class="back-button">X</a>
+        <h2>Signup - PageReal</h2>
+        <form>
+            <label for="username">Create a username:</label>
+            <input type="text" id="username" name="username">
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required>
-            <label>Sex:</label>
-            <label for="male">Male</label>
-            <input type="radio" name="sex" value="Male" id="male">
-            <label for="female">Female</label>
-            <input type="radio" name="sex" value="Female" id="female">
-            <label>Language:</label>
-            <label for="english">English</label>
-            <input type="checkbox" name="language" value="English" id="english">
-            <label for="non-english">non-English</label>
-            <input type="checkbox" name="language" value="Non-English" id="non-english">
-            <label for="desc">About:</label>
-            <textarea name="desc" id="desc" rows="5"></textarea>
-            <input type="submit" name="submit" value="Submit">
+            <input type="email" id="email" name="email">
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" name="password">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword">
+            <input type="submit" value="Sign Up">
         </form>
     </div>
-    <script>
-        const countrySelect = document.getElementById('country');
-        const countries = [
-            'Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia', 'Australia', 'Austria',
-            'Azerbaijan', 'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Benin', 'Bhutan',
-            'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brazil', 'Brunei', 'Bulgaria', 'Burkina Faso', 'Burundi', 'Cabo Verde', 'Cambodia',
-            'Cameroon', 'Canada', 'Central African Republic', 'Chad', 'Chile', 'China', 'Colombia', 'Comoros', 'Congo', 'Costa Rica',
-            'Croatia', 'Cuba', 'Cyprus', 'Czech Republic', 'Denmark', 'Djibouti', 'Dominica', 'Dominican Republic', 'East Timor', 'Ecuador',
-            'Egypt', 'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Eswatini', 'Ethiopia', 'Fiji', 'Finland', 'France',
-            'Gabon', 'Gambia', 'Georgia', 'Germany', 'Ghana', 'Greece', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-Bissau',
-            'Guyana', 'Haiti', 'Honduras', 'Hungary', 'Iceland', 'India', 'Indonesia', 'Iran', 'Iraq', 'Ireland',
-            'Israel', 'Italy', 'Jamaica', 'Japan', 'Jordan', 'Kazakhstan', 'Kenya', 'Kiribati', 'Korea', 'Kosovo',
-            'Kuwait', 'Kyrgyzstan', 'Laos', 'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania',
-            'Luxembourg', 'Madagascar', 'Malawi', 'Malaysia', 'Maldives', 'Mali', 'Malta', 'Marshall Islands', 'Mauritania', 'Mauritius',
-            'Mexico', 'Micronesia', 'Moldova', 'Monaco', 'Mongolia', 'Montenegro', 'Morocco', 'Mozambique', 'Myanmar', 'Namibia',
-            'Nauru', 'Nepal', 'Netherlands', 'New Zealand', 'Nicaragua', 'Niger', 'Nigeria', 'North Macedonia', 'Norway', 'Oman',
-            'Pakistan', 'Palau', 'Palestine', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines', 'Poland', 'Portugal',
-            'Qatar', 'Romania', 'Russia', 'Rwanda', 'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines', 'Samoa', 'San Marino',
-            'Sao Tome and Principe', 'Saudi Arabia', 'Senegal', 'Serbia', 'Seychelles', 'Sierra Leone', 'Singapore', 'Slovakia', 'Slovenia', 'Solomon Islands',
-            'Somalia', 'South Africa', 'South Sudan', 'Spain', 'Sri Lanka', 'Sudan', 'Suriname', 'Sweden', 'Switzerland', 'Syria',
-            'Taiwan', 'Tajikistan', 'Tanzania', 'Thailand', 'Togo', 'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkey', 'Turkmenistan',
-            'Tuvalu', 'Uganda', 'Ukraine', 'United Arab Emirates', 'United Kingdom', 'United States', 'Uruguay', 'Uzbekistan', 'Vanuatu', 'Vatican City',
-            'Venezuela', 'Vietnam', 'Yemen', 'Zambia', 'Zimbabwe'
-        ];
-
-        countries.forEach(country => {
-            const option = document.createElement('option');
-            option.text = country;
-            option.value = country;
-            countrySelect.appendChild(option);
-        });
-    </script>
+    <div class="login-box">
+        <a href="login.html">login here</a>
+    </div>
 </body>
 </html>
